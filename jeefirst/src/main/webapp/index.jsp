@@ -1,5 +1,13 @@
 <html>
 <body>
-<h2>Hello World! Miau miau le petit chat</h2>
+<h2>Hello World! Welcome to the JEE Miau miau le petit chat Site</h2
+<nav>
+    <ul>
+        <li><a href="./hello">Hello</a></li>
+        <li><a href="./pdf">Pdf</a></li>
+        <li><a href="./some">Somme</a></li>
+        <li><a href="./list">List</a></li>
+    </ul>
+</nav>
 </body>
 </html>
