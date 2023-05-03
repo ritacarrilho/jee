@@ -33,18 +33,19 @@ public class PrivateServlet extends HttpServlet {
 
         // verify if the user is already connected and redirect
         if(session.getAttribute("connected") != null && session.getAttribute("connected").equals(true)) {
-            RequestDispatcher dispatcher = req.getRequestDispatcher("./private"); // request dispatcher
-            dispatcher.forward(req, resp);
+            out.println("<nav><a href='./logout'>Logout</a></nav>");
+            resp.sendRedirect("./private");
+            // RequestDispatcher dispatcher = req.getRequestDispatcher("./private"); // request dispatcher
+            // dispatcher.forward(req, resp);
         } else {
             String username = req.getParameter("username");
             String password = req.getParameter("password");
 
             if(username.equals("admin") && password.equals("admin")) {
                 session.setAttribute("connected", true);
-                RequestDispatcher dispatcher = req.getRequestDispatcher("./private"); // request dispatcher
-                dispatcher.forward(req, resp);
+                resp.sendRedirect("./private");
             } else {
-                out.println("<html><head><title>private</title></head><body><p>Wrong credentials</p></body></html>");
+                out.println("<html><head><title>private</title></head><body><nav><a href='./'>Home</a></nav><p>Wrong credentials</p></body></html>");
             }
         }
     }

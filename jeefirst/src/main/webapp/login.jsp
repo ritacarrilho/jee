@@ -8,6 +8,7 @@
     <title>Login</title>
 </head>
 <body>
+    <nav><a href='./'>Home</a></nav>
     <form action="./private" method="POST">
     <div>
         <label for="username">Username</label>

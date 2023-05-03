@@ -22,7 +22,7 @@ public class SommeServlet extends HttpServlet {
         String num1 = req.getParameter("num1");
         String num2 = req.getParameter("num2");
 
-        out.println("<html><head><title>hello</title></head><body><h2>Welcome to the Some Page</h2><p>The some of "
+        out.println("<html><head><title>hello</title></head><body><nav><a href='./'>Home</a><a href='./logout'>Logout</a></nav><h2>Welcome to the Some Page</h2><p>The some of "
                 + num1 + " and " + num2
                 + " is " + String.valueOf(addNumbers(Integer.parseInt(num1), Integer.parseInt(num2)))
                 + "</p> <h4>Merci, au revoir.</h4></body></html>"
@@ -37,7 +37,7 @@ public class SommeServlet extends HttpServlet {
         String num1 = req.getParameter("num1");
         String num2 = req.getParameter("num2");
 
-        out.println("<html><head><title>hello</title></head><body><h2>Welcome to the Some Page</h2><p>The some of "
+        out.println("<html><head><title>hello</title></head><body><nav><a href='./'>Home</a></nav><h2>Welcome to the Some Page</h2><p>The some of "
                 + num1 + " and " + num2
                 + " is " + String.valueOf(addNumbers(Integer.parseInt(num1), Integer.parseInt(num2)))
                 + "</p> <h6>Merci, au revoir.</h6></body></html>"

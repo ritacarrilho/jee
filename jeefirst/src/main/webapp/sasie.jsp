@@ -8,6 +8,10 @@
     <title>Saisie</title>
 </head>
 <body>
+    <nav>
+        <a href='./'>Home</a>
+        <a href='./logout'>Logout</a>
+    </nav>
     <form action="./some" method="POST">
     <p>
         <label for="ch1">Premier chiffre :</label>
