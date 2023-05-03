@@ -5,8 +5,9 @@
     <ul>
         <li><a href="./hello">Hello</a></li>
         <li><a href="./pdf">Pdf</a></li>
-        <li><a href="./some">Somme</a></li>
+        <li><a href="./sasie.jsp">Somme</a></li>
         <li><a href="./list">List</a></li>
+        <li><a href="./login.jsp">Login</a></li>
     </ul>
 </nav>
 </body>
